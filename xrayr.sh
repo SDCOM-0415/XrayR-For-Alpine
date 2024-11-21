@@ -35,9 +35,7 @@ install_xrayr() {
     if ! command -v unzip >/dev/null 2>&1; then
         apk add unzip
     fi
-    if ! command -v screen >/dev/null 2>&1; then
-        apk add screen
-    fi
+
     
     # 检查 /etc/XrayR 目录是否存在
     if [ -d "/etc/XrayR" ]; then
